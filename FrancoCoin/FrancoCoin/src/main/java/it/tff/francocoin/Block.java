@@ -20,6 +20,8 @@ public class Block {
   private HashMap<String, Object> PreviousBlock;
   private Transaction[] transactions;
   private String hash;
+  private BigInteger publicKey;
+  private String signature;
 
   //This is ported 1:1 from C's #define syntax and customs
   final BigInteger FNV_OFFSET = new BigInteger("144066263297769815596495629667062367629");
